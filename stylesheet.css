@@ -1,0 +1,54 @@
+/* 自動で画面サイズを変更 */
+*{
+    margin:0;
+    padding:0;
+    -webkit-text-size-adjust: 100%;    
+}
+
+/* 本体 */
+body{
+    background-color:white;
+}
+
+/* top_title(h1), input_form(p), username, password, button_form, login_button */
+.top_container{
+    /* 中央揃え */
+    text-align: center;
+}
+
+h1{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    display: inline-block;
+}
+
+.button_form{
+    padding-top: 6vh;
+}
+
+/* ログインボタン */
+.login_button{
+    width: 12vw;
+    height: 6.3vh;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+/* マウスがボタン上にある時 */
+.login_button:hover{
+    background-color: darkgray;
+    transition: all 1s;
+}
+
+/* ボタンをクリックした時 */
+.login_button:active{
+    background-color: darkgray;
+    padding-top:1.2vh;
+    transition: all 0s;
+}

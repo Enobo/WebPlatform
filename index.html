@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--ログイン画面-->
+<html>
+  <head><!--ヘッダー開始-->
+    <meta charset="utf-8">
+    <title>Enobo.com</title>
+    <!--CSSファイル呼び出し-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!--jsファイル呼び出し-->
+    <script type="text/javascript" src="test.js"></script>      
+  </head><!--ヘッダー終了-->
+  
+  <body><!--Body開始-->
+    <div class="top_container"><!--top_container開始-->
+      <!--見出し-->      
+      <div class="top_title">
+        <h1>Enobo.com</h1> 
+      </div>
+      <!--ログイン入力フォーム-->
+      <form action="login_test.php" method = "post">
+        <div class="input_form"> 
+          <p>Username:</p>
+          <input  class="username" type="text" maxlength="20" name="username" value="">
+          <br>
+          <p>Password:</p>
+          <input  class="password" type="password" maxlength="30" name="password" value="">  
+        </div>
+        <!--ログインボタン-->
+        <div class="button_form">
+          <button class="login_button" type="submit" >Login</button>
+        </div>
+      </form>
+    </div><!--top_container終了-->
+  </body><!--Body終了-->
+</html>
