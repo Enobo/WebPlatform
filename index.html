@@ -7,17 +7,17 @@
     <!--CSSファイル呼び出し-->
     <link rel="stylesheet" href="stylesheet.css">
     <!--jsファイル呼び出し-->
-    <script type="text/javascript" src="test.js"></script>      
+    <script type="text/javascript" src="login_motion.js"></script>  
   </head><!--ヘッダー終了-->
   
-  <body><!--Body開始-->
-    <div class="top_container"><!--top_container開始-->
+  <body id="body"><!--Body開始-->
+    <div id="top_container"><!--top_container開始-->
       <!--見出し-->      
       <div class="top_title">
         <h1>Enobo.com</h1> 
       </div>
       <!--ログイン入力フォーム-->
-      <form action="login.php" method = "post">
+      <form name="myform" action="login.php" method = "post">
         <div class="input_form"> 
           <p>Username:</p>
           <input  class="username" type="text" maxlength="20" name="username" value="">
@@ -27,7 +27,7 @@
         </div>
         <!--ログインボタン-->
         <div class="button_form">
-          <button class="login_button" type="submit" >Login</button>
+          <button id="login_button" type="button" >Login</button>
         </div>
       </form>
     </div><!--top_container終了-->
