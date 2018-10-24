@@ -3,9 +3,9 @@ window.addEventListener('load', function(){
     //bodyのIDを取得
     var body = document.getElementById('body');
     //top_containerのIDを取得
-    var container = document.getElementById('top_container');
+    var top_container = document.getElementById('top_container');
     //login_buttonのIDを取得
-    var btn = document.getElementById('login_button');
+    var login_button = document.getElementById('login_button');
     
     //bodyにfadeoutクラスを追加する関数
     function fadeOut(){
@@ -14,7 +14,7 @@ window.addEventListener('load', function(){
 
     //top_containerにtransformクラスを追加する関数
     function transForm(){
-        container.classList.add('transform');
+        top_container.classList.add('transform');
     }
 
     //formに送信する関数
@@ -23,7 +23,7 @@ window.addEventListener('load', function(){
     }
 
     //Loginボタンクリック時の動作
-    btn.addEventListener('click', function(){
+    login_button.addEventListener('click', function(){
         fadeOut();
         transForm();
         setTimeout(submitData,800);//800ms後にsubmitDataを実行
