@@ -3,7 +3,7 @@
   include('config_reader.php');
   $ConfigReader = new ConfigReader(); 
   $data_array = $ConfigReader->readSection("db_params");
-  
+  $user_table = $data_array["db_user_table"];
   // セッション開始
   session_start();
     // POST methondの時のみ反応
@@ -31,7 +31,7 @@
       //echo "Host information: " . mysqli_get_host_info($db_link) . PHP_EOL;
       
       // ユーザー情報を取得
-      $login_query = "SELECT id FROM users WHERE username = '$username' and password = '$password'";
+      $login_query = "SELECT id FROM $user_table WHERE username = '$username' and password = '$password'";
       
       // DBを選択
       mysqli_select_db($db_link, $data_array["db_dbname"]);
@@ -50,7 +50,7 @@
       // usernameとpasswordが usersテーブル内に一致した場合ログイン
       if($n_row == 1) {
         // welcome.phpにリダイレクト
-        header("location: mainPage.html");
+        header("location: mainPage.php");
         }else {
         // エラーメッセージ
         $error = "Your username or password is invalid";
