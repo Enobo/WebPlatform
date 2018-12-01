@@ -10,7 +10,7 @@
   
   <body><!--Body開始-->
         <div class="user_register_container"><!--user_register_container開始-->
-            <form name="add_user_button" action="add_user.php" method = "post"><!--ユーザー登録フォーム開始-->
+            <form name="add_user_button" action="add_user_session.php" method = "post"><!--ユーザー登録フォーム開始-->
                 <div class="add_form"> 
                 <p>Username:</p>
                 <input  class="username" type="text" maxlength="20" name="username" value="">
