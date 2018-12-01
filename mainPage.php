@@ -17,28 +17,12 @@
                 <li><a href="#">Schedule</a></li>
                 <li><a href="#">GameCenter</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="#">Admin</a></li>
             </ul>
         </div>
-        
         <div class="mainpage_container"><!--top_container開始-->
             <h1>Welcome to EnoboWorld!</h1>
-            <!--ユーザー登録フォーム-->
-            <form name="add_user_button" action="add_user.php" method = "post">
-                <div class="add_form"> 
-                <p>Username:</p>
-                <input  class="username" type="text" maxlength="20" name="username" value="">
-                <br>
-                <p>Password:</p>
-                <input  class="password" type="password" maxlength="30" name="password" value="">  
-                </div>
-                <div class="button_form">
-                    <button class="add_button" type="submit" >
-                    <span>登録</span>
-                    </button>
-                </div>
-            </form>
-
-        </div>
+        </div><!--top_container終了-->
     </div>
   </body><!--Body終了-->
 </html>
